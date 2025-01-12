@@ -19,7 +19,7 @@ fs = require 'fs'
 
 app = express()
 
-payload_limit = process.env.PAYLOAD_LIMIT or '20mb'
+payload_limit = process.env.PAYLOAD_LIMIT or '200mb'
 
 app.use helmet()
 app.use '/healthcheck', health()
